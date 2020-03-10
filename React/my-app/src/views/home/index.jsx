@@ -1,14 +1,15 @@
 import React from 'react';
+import FuelCost from '../../components/fuel-cost';
 import Toolbar from '../../components/toolbar';
-import ListItem from '../../components/list-item';
 import './home.css';
 
 export default function Home(props) {
   return (
-    <div>
-      <Toolbar></Toolbar>
-      Hello World
-    <ListItem></ListItem>
+    <div className="cost-calculator">
+        <Toolbar />
+        <div className="form-calculator">
+          <FuelCost />
+        </div>
     </div>
   );
 }
